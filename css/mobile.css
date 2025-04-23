@@ -277,12 +277,12 @@
   }
   .cards-container {
   }
-  .container-overlay {
-  }
 
-  .overlay-text {
+  .container-overlay {
     position: absolute;
-    bottom: 0;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     background: #ffffff;
     background: linear-gradient(
       180deg,
@@ -291,21 +291,21 @@
     );
     color: #f1f1f1;
     width: 100%;
-    transition: 0.5s ease;
-    opacity: 0;
+    opacity: 1;
     color: white;
     font-size: 20px;
     padding: 40px;
     text-align: center;
   }
-  .overlay-text:hover{
-    opacity: 1;
+
+  .container-overlay h3 {
   }
-  .overlay-text h3 {
-  }
-  .overlay-text p {
+  .container-overlay p {
   }
 
   .container-picture {
+    display: block;
+    width: 100%;
+    height: auto;
   }
 }
