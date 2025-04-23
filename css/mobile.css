@@ -273,39 +273,51 @@
 
     padding: 1rem;
   }
-  .projects-cards {
-  }
-  .cards-container {
-  }
-
-  .container-overlay {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background: #ffffff;
-    background: linear-gradient(
-      180deg,
-      rgba(255, 255, 255, 0) 0%,
-      rgba(0, 0, 0, 1) 100%
-    );
-    color: #f1f1f1;
-    width: 100%;
-    opacity: 1;
-    color: white;
-    font-size: 20px;
-    padding: 40px;
-    text-align: center;
+  .projects-heading {
+    margin-bottom: 1rem;
   }
 
-  .container-overlay h3 {
+  .projects-picture {
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 1rem;
   }
-  .container-overlay p {
-  }
-
-  .container-picture {
-    display: block;
+  .projects-picture img {
     width: 100%;
     height: auto;
+    display: block;
+  }
+
+  .picture-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 1rem;
+    background: linear-gradient(180deg, #ffffff00 0%, #000000 100%);
+    text-align: left;
+
+    opacity: 1;
+    transition: opacity 0.3s ease;
+  }
+  .picture-overlay h3 {
+    font-size: 1.25rem;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: 0.25px;
+    text-align: left;
+    margin-top: 0.5rem;
+  }
+  .picture-overlay p {
+    font-size: 1rem;
+    line-height: 10px;
+    letter-spacing: 0.15px;
+    text-align: left;
+
+    margin-top: 0.5rem;
+  }
+
+  .projects-picture:hover .picture-overlay {
+    opacity: 0;
   }
 }
