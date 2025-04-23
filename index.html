@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>qooberrie</title>
+  </head>
+  <body>
+    <div class="header-menu">
+      <div class="menu-row">
+        <img class="menu-logo" src="assets/mobile/logo.svg" />
+        <img
+          id="hamburgerOpen"
+          class="hamburger-open"
+          onclick="Menu()"
+          src="assets/mobile/hamburger.svg"
+        />
+        <img
+          id="hamburgerClose"
+          class="hamburger-close"
+          onclick="Menu()"
+          src="assets/mobile/close.svg"
+        />
+      </div>
+      <img class="menu-divider" src="assets/mobile/divider.svg" />
+    </div>
+
+    <nav>
+      <ul id="menuHamburger" class="hamburger-items">
+        <li><a onclick="showSection('home')">Início</a></li>
+        <li><a onclick="showSection('about')">Sobre</a></li>
+        <li><a onclick="showSection('projects')">Projetos</a></li>
+        <li><a onclick="showSection('projects')">Contato</a></li>
+      </ul>
+    </nav>
+
+    <section class="section-introduction home active">
+      <div class="introduction-text">
+        <h1 class="text-heading">
+          me chamo <mark>ollie</mark> um designer e desenvolvedor
+        </h1>
+        <h2 class="text-paragraph">
+          bem vindo ao meu espaço, onde eu falo e te mostro um pouco sobre mim,
+          minhas habilidades, experiências e meus objetivos.
+        </h2>
+      </div>
+      <div class="introduction-button">
+        <div class="button-project">
+          <a href="#projects">Projetos</a>
+        </div>
+        <div class="button-cv">
+          <img src="assets/mobile/download.svg" />
+          <a href="">Baixar CV</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-card home active">
+      <div class="card">
+        <img class="card-image" src="assets/mobile/cardprofile.png" />
+        <div class="card-content">
+          <div class="content-text">
+            <h2>sobre mim</h2>
+            <p>
+              sou aprendiz de desenvolvedor mobile e, atualmente, moro no norte
+              do brasil. curto trabalhar em equipe, projetos inovadores (ou só
+              inovar o que já existe). acho incrível trocar habilidades, crescer
+              junto e desenvolver em conjunto qualquer produto digital. tô
+              sempre aprendendo e buscando coisas novas no dia a dia, porque
+              acredito que é um aprendizado contínuo, e sempre podemos melhorar.
+              eu sempre tento absorver e aplicar o máximo de feedback possível
+              nos projetos. minha meta é criar designs e códigos que não sejam
+              só bonitos, mas que funcionem bem pra todo mundo. curto trabalhar
+              bem de perto com quem tá envolvido no processo, porque acredito
+              que boas ideias nascem em conjunto.
+              <mark>kvnrwdt@gmail.com</mark>
+            </p>
+          </div>
+          <div class="content-button">
+            <a href="">Veja mais</a>
+            <img src="assets/mobile/rightarrow.svg" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-abilities home active">
+      <h2 class="abilities-heading">habilidades</h2>
+      <div class="abilities-blocks">
+        <div class="block-wrapper">
+          <img src="assets/mobile/graphicdesign.svg" />
+          <h5>design gráfico</h5>
+          <p>
+            busco criar composições que comuniquem de forma clara, com
+            equilíbrio entre estética e propósito. me atento aos detalhes,
+            cores, tipografia e harmonia.
+          </p>
+        </div>
+        <div class="block-wrapper">
+          <img src="assets/mobile/uidesign.svg" />
+          <h5>Ui design</h5>
+          <p>
+            curto trabalhar com sistemas de design porque deixa tudo mais
+            organizado. minha meta é criar experiências que funcionem bem e
+            tenham um visual consistente.
+          </p>
+        </div>
+        <div class="block-wrapper">
+          <img src="assets/mobile/digitalart.svg" />
+          <h5>arte digital</h5>
+          <p>
+            pra mim, arte digital é onde a criatividade ganha forma sem limites.
+            exploro diferentes estilos, técnicas e ferramentas pra dar vida a
+            ideias que expressem algo único.
+          </p>
+        </div>
+      </div>
+      <div class="abilities-button">
+        <a href="">Veja mais</a>
+        <img src="assets/mobile/rightarrow.svg" />
+      </div>
+    </section>
+
+    <section class="section-projects home active">
+      <h2 class="projects-heading">projetos</h2>
+      <div class="projects-cards">
+        <div class="cards-container">
+          <div class="container-overlay">
+            <div class="overlay-text">
+              <h3>ingab.</h3>
+              <p>portfolio design</p>
+            </div>
+          </div>
+          <div class="container-picture">
+            <img src="assets/mobile/ingab.png" alt="" />
+          </div>
+        </div>
+      </div>
+      <div class="projects-button">
+        <a href="">Veja mais</a>
+        <img src="assets/mobile/rightarrow.svg" />
+      </div>
+    </section>
+
+    <script src="script.js"></script>
+  </body>
+</html>

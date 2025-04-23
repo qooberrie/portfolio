@@ -1,0 +1,49 @@
+/* --- CSS RESET --- */
+
+* {
+  font-family: "DM Sans", sans-serif;
+  margin: 0 auto;
+  padding: 0;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  color: #eaeaea;
+}
+html {
+  height: 100vh;
+  width: 100vw;
+}
+
+body {
+  background: #171718;
+
+  margin: 0 auto;
+
+  width: 100vw;
+
+  /* display: flex;
+  flex-direction: column; */
+
+  /* justify-content: center;
+  align-items: center; */
+}
+
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+}
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: #eaeaea;
+}
+img {
+  max-width: 100%;
+  display: block;
+}
