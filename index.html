@@ -7,9 +7,9 @@
     <title>qooberrie</title>
   </head>
   <body>
-    <div class="header-menu">
+    <header class="header-menu">
       <div class="menu-row">
-        <img class="menu-logo" src="assets/mobile/logo.svg" />
+        <img class="logo" src="assets/mobile/logo.svg" />
         <img
           id="hamburgerOpen"
           class="hamburger-open"
@@ -23,22 +23,22 @@
           src="assets/mobile/close.svg"
         />
       </div>
-      <img class="menu-divider" src="assets/mobile/divider.svg" />
-    </div>
+      <img class="menu-divider" src="assets/mobile/headerdivider.svg" />
+    </header>
 
-    <nav>
+    <nav class="menu">
       <ul id="menuHamburger" class="hamburger-items">
         <li><a onclick="showSection('home')">Início</a></li>
         <li><a onclick="showSection('about')">Sobre</a></li>
         <li><a onclick="showSection('projects')">Projetos</a></li>
-        <li><a onclick="showSection('projects')">Contato</a></li>
+        <li><a href="#footer">Contato</a></li>
       </ul>
     </nav>
 
     <section class="section-introduction home active">
       <div class="introduction-text">
         <h1 class="text-heading">
-          me chamo <mark>ollie</mark> um designer e desenvolvedor
+          me chamo <mark>ollie</mark>, sou designer e desenvolvedor
         </h1>
         <h2 class="text-paragraph">
           bem vindo ao meu espaço, onde eu falo e te mostro um pouco sobre mim,
@@ -46,7 +46,7 @@
         </h2>
       </div>
       <div class="introduction-button">
-        <div class="button-project">
+        <div class="button-projects">
           <a href="#projects">Projetos</a>
         </div>
         <div class="button-cv">
@@ -78,7 +78,7 @@
             </p>
           </div>
           <div class="content-button">
-            <a href="">Veja mais</a>
+            <a href="#projects">Veja mais</a>
             <img src="assets/mobile/rightarrow.svg" />
           </div>
         </div>
@@ -125,10 +125,24 @@
     <section class="section-projects home active">
       <h2 class="projects-heading">projetos</h2>
       <div class="projects-picture">
-        <img src="assets/mobile/ingab.png" alt="" />
+        <img src="assets/mobile/ingab.png" />
         <div class="picture-overlay">
           <h3>ingab.</h3>
           <p>portfolio design</p>
+        </div>
+      </div>
+      <div class="projects-picture">
+        <img src="assets/mobile/qooberrie.png" />
+        <div class="picture-overlay">
+          <h3>qooberrie</h3>
+          <p>logo para marca pessoal.</p>
+        </div>
+      </div>
+      <div class="projects-picture">
+        <img src="assets/mobile/pixelboom.png" />
+        <div class="picture-overlay">
+          <h3>pixelboom</h3>
+          <p>projeto pessoal de website</p>
         </div>
       </div>
       <div class="projects-button">
@@ -136,6 +150,46 @@
         <img src="assets/mobile/rightarrow.svg" />
       </div>
     </section>
+
+    <footer id="footer" class="footer">
+      <nav class="footer-navigation">
+        <img class="logo" src="assets/mobile/logo.svg" />
+        <ul class="navigation-sections">
+          <li>
+            <a onclick="showSection('home')"><mark>Início</mark></a>
+          </li>
+          <li><a onclick="showSection('about')">Sobre</a></li>
+          <li><a onclick="showSection('projects')">Projetos</a></li>
+        </ul>
+        <ul class="navigation-contact">
+          <li>
+            <a href=""><mark>Contato</mark></a>
+          </li>
+          <li><a href="">Email</a></li>
+          <li><a href="">Github</a></li>
+        </ul>
+        <ul class="navigation-social">
+          <li>
+            <a href=""><mark>Social</mark></a>
+          </li>
+          <div class="social-icons">
+            <li>
+              <a href=""><img src="assets/mobile/behance.svg" alt="" /></a>
+            </li>
+            <li>
+              <a href=""><img src="assets/mobile/linkedin.svg" alt="" /></a>
+            </li>
+            <li>
+              <a href=""><img src="assets/mobile/figma.svg" alt="" /></a>
+            </li>
+          </div>
+        </ul>
+      </nav>
+      <div class="footer-copyright">
+        <img src="assets/mobile/footerdivider.svg" />
+        <p>© 2025 QOOBERRIE</p>
+      </div>
+    </footer>
 
     <script src="script.js"></script>
   </body>
